@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactus</title>
+    <link rel="shortcut icon" href="img/navlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+
+.navlogo{
+  height: 70px;
+  width: 100px;
+  padding-left: 10px;
+}
+.snavbar{
+  height: 70px;
+  background-color:#5389F5;
+}
+.navbtn{
+  background-color: lightgray;
+}
+.navbtn:hover{
+  outline: antiquewhite 2px solid;
+  color: rgb(118, 118, 86);
+  background-color: rgb(255, 224, 229);
+}
+
+    </style>
+</style>
+
+<body>
+    
+<!-- nav start -->
+
+<nav class="navbar navbar-expand-lg snavbar navbar-light">
+  <div class="container-fluid">
+    <img class="navlogo" src="img/navlogo.png" alt="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="aboutus.html">About US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="contact us.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="feedback.html">Feedback</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <a class="btn navbtn" href="signup.html">Sign Up</a>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="row">
+
+  <div class="col">
+    <form style="width: 350pxpx; margin-left: 100px; border: 2px solid black; margin-top: 80px; background-color: ivory;" class="row g-3">
+      <h1 style="font-style: italic; color: palevioletred;" class="text-center">Plan Your Dream Wedding Today</h1>
+      <div class="col-12">
+        <label for="inputEmail4" class="form-label">FUll Name</label>
+        <input type="text" class="form-control text-dark" id="inputEmail4" placeholder="Enter Your Full Name" pattern="[A-Za-z]{3,12}" title="Atleast Nmae Should be Three latters" required> 
+      </div>
+      <div class="col-12">
+        <label for="inputEmail4" class="form-label">E-mail</label>
+        <input type="number" class="form-control" id="inputEmail4" required placeholder="Enter Your E-Mail">
+      </div>
+      <div class="col-12">
+        <label for="inputEmail4" class="form-label">Contact Number</label>
+        <input type="email" class="form-control" id="inputEmail4" required placeholder="Enter Your Contact">
+      </div>
+      <div class="col-12">
+        <label for="inputPassword4" class="form-label">Event Date</label>
+        <input type="password" class="form-control" id="inputPassword4" required placeholder="Enter Your Date" pattern=".{8,}" title="Eight or more characters">>
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+      </div>
+    
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity" required>
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip" required>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" required>
+          <label class="form-check-label" for="gridCheck">
+            Check me out
+          </label>
+        </div>
+      </div>
+      <div class="col-12 btn-lg d-grid gap-2">
+   
+        <button style="background-color: red;" type="submit" class="btn btn-dark m-2">Submit</button>
+      </div>
+    </form>
+  </div>
+  <div class="col text-center">
+    <h1>Map</h1>
+  
+    <iframe style="margin-top: 80px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.3139925217256!2d67.14924997488073!3d24.887269144185275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339999415e0c3%3A0x36742eee0fd9c291!2sAptech%20Metro%20Star%20Gate!5e0!3m2!1sen!2s!4v1739251984226!5m2!1sen!2s" width="480" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+  </div>
+  
+  </div>
+  
+  <div class="row m-4">
+    <div class="col">
+      <a href="">
+        <i class="fa-solid fa-location-dot" style="font-size: 80px; color: black;"></i>
+      </a>
+  <h3>location</h3>
+    </div>
+    <div class="col">
+  <a href="">
+    <i class="fa-solid fa-phone-volume" style="font-size: 80px; color: black;"></i>
+  </a>
+  <h3>Contact</h3>
+    </div>
+    <div class="col">
+  
+  <form action="mailto:miniproject@gmail.com">
+    <button class="fa-solid fa-square-envelope" style="font-size: 80px; border: none;" ></button>
+    <h3>E-mail</h3>
+    <!-- <i class="fa-solid fa-square-envelope" style="font-size: 80px;"></i> -->
+  </form>
+  
+  
+     
+    </div>
+  </div>
+  
+  
+  
+  </div>
+  
+  <!-- nav end -->
+
+
+    
+    <!-- <div class="row m-4">
+
+      <div class="col-9">
+      </div>
+
+      <div class="col-1">
+        <a href="https://www.google.com/maps/place/Aptech+Metro+Star+Gate/@24.8872691,67.14925,17z/data=!3m1!4b1!4m6!3m5!1s0x3eb339999415e0c3:0x36742eee0fd9c291!8m2!3d24.8872643!4d67.1518249!16s%2Fg%2F1pv1g2sz1?authuser=1&entry=ttu&g_ep=EgoyMDI1MDIwOS4wIKXMDSoASAFQAw%3D%3D">
+          <i class="fa-solid fa-location-dot" style="font-size: 30px;"></i>
+        </a>
+    <h6>location</h6>
+      </div>
+
+      <div class="col-1">
+    <a href="">
+      <i class="fa-solid fa-phone-volume text-success" style="font-size: 30px;"></i>
+    </a>
+    <h6>contact</h6>
+      </div>
+
+      <div class="col-1">
+    <form action="mailto:miniproject@gmail.com">
+      <button class="fa-solid fa-square-envelope text-danger" style="font-size: 30px; border: none;" ></button>
+      <h6>m@il</h6>
+    </form>
+    
+    
+       
+      </div>
+    </div>  -->
+</div>
+
+<!-- contact us end -->
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

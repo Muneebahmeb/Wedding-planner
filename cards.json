@@ -1,0 +1,27 @@
+let data=[
+
+    {
+        "img" : "img/weddingevent.jpg",
+        "btn" : "Wedding Events"
+    },
+    {
+        "img" : "img/venue1.jpg",
+        "btn" : "Venues"
+    },
+    {
+        "img" : "img/engagement8.jpg",
+        "btn" : "Engagement"
+    },
+    {
+        "img" : "img/nikah1.webp",
+        "btn" : "Nikah"
+    },
+    {
+        "img" : "img/mehndi9.jpg",
+        "btn" : "Mehndi"
+    },
+    {
+        "img" : "img/walima5.jpg",
+        "btn" : "Walima"
+    }
+]

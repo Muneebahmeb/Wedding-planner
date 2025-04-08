@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Planner</title>
+  <link rel="shortcut icon" href="img/navlogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<style>
+
+.navlogo{
+  height: 70px;
+  width: 100px;
+  padding-left: 10px;
+}
+.snavbar{
+  height: 70px;
+  background-color:#5389F5;
+}
+.navbtn{
+  background-color: lightgray;
+}
+.navbtn:hover{
+  outline: antiquewhite 2px solid;
+  color: rgb(118, 118, 86);
+  background-color: rgb(255, 224, 229);
+}
+.bannercontainer{
+  height: 70vh;
+  width: 100%;
+}
+.bcfh{
+  color: rgb(255, 116, 139);
+  padding-top: 40px;
+  text-align: center;
+  text-decoration: underline 2px solid rgb(255, 116, 139);
+}
+.bcsh{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  padding-top: 10px;
+  color: rgb(118, 118, 86);
+}
+.bcpara{
+  padding-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 100px;
+}
+.cardcontainer{
+  height: 700px;
+  width: 100%;
+  background-color: lightgray;
+}
+.ccfh{
+  padding-top: 40px;
+  text-align: center;
+  color: rgb(118, 118, 86);
+}
+.ccsh{
+  padding-top: 20px;
+  text-align: center;
+  color: rgb(118, 118, 86);
+}
+.wedcard{
+  height: 200px;
+  width: 300px;
+  background: transparent;
+  border: none;
+  padding-left: 50px;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+.cardimg{
+  height: 200px;
+  width: 300px;
+  border-radius: 30px 0px 30px 0px;
+}
+.forthead{
+  text-align: center;
+  color: rgb(118, 118, 86);
+  font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+}
+.fortcont{
+  padding-top: 30px;
+}
+
+
+</style>
+
+<body>
+  
+<!-- nav start -->
+
+<nav class="navbar navbar-expand-lg snavbar navbar-light">
+  <div class="container-fluid">
+    <img class="navlogo" src="img/navlogo.png" alt="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="aboutus.html">About US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="contact us.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="feedback.html">Feedback</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <a class="btn navbtn" href="signup.html">Sign Up</a>
+      </form>
+      <form class="d-flex">
+        <a class="btn navbtn" href="D:\E-project\muneeb\Login.html">Login Up</a>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- nav end -->
+
+<!-- banner start -->
+
+<div class="bannercontainer">
+  <div class="row">
+    <h6 class="bcfh">Wedding Planner</h6>
+  </div>
+  <div class="row">
+    <h1 style="font-style: italic;" class="bcsh">Making Your Dream Day <br>a Perfect Reality.
+  </div>
+  <div class="row">
+    <p class="bcpara">The Creators Events Is an event Management Company Based In Karachi That Caters to Different<br>Events Ranging From Formal Business Meetings and adventurous Domestic Tours To Lavish<br>Weddings. We Are An All-Rounder Event Planner In Karachi, Tapping Various Verticals When It<br>Comes Down To Celebrating The Grand Way.</p>
+  </div>
+</div>
+
+<!-- banner end -->
+
+<!-- card start-->
+
+<div class="cardcontainer">
+  <div class="row">
+    <h5 class="ccfh">Welcome</h5>
+  </div>
+  <div class="row">
+    <h2 class="ccsh">We plan & design weddings.<br>That captures the imagination.</h2>
+  </div>
+  <div class="row" id="dataa">
+  
+  </div>
+</div>
+
+<!-- card end -->
+
+<div class="container-fluid fortcont">
+  <div class="row forthead"><h1>Our Portfolio</h1></div>
+  <div class="row fortpara text-center"><p>Sneak Peak at our galleries to create your style for your event with us</p></div>
+</div>
+
+
+<script src="cards.json"></script>
+<script>
+
+for(var a=0; a<=data.length; a++){
+dataa= document.getElementById("dataa").innerHTML+=`
+<div class="col">
+  <div class="wedcard">
+    <img src="${data[a].img}" class="cardimg" alt="..." height="200px">
+      <a href="gallery.html" class="btn cardbtn">${data[a].btn}</a>
+  </div>
+</div>  
+`}
+</script>
+ 
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Planner</title>
+  <link rel="shortcut icon" href="img/navlogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<style>
+
+.navlogo{
+  height: 70px;
+  width: 100px;
+  padding-left: 10px;
+}
+.snavbar{
+  height: 70px;
+  background-color: #5389F5;
+}
+.gallery-item {
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-title {
+  background-color: lightpink;
+  padding: 40px 0;
+  margin-bottom: 40px;
+  color: lightgoldenrodyellow
+  border-radius: 0 0 50px 50px;
+}
+.tbtn{
+  /* background: transparent;
+  color: rgb(118, 118, 86); */
+  padding-bottom: -5px;
+  padding-top: 10px;
+}
+.navbtn{
+  background-color: lightgrey;
+}
+.navbtn:hover{
+  outline: antiquewhite 2px solid;
+  color: rgb(118, 118, 86);
+  background-color: rgb(255, 224, 229);
+}
+
+</style>
+
+<body style="background-color: lightgoldenrodyellow;">
+
+<!-- nav start -->
+
+<nav class="navbar navbar-expand-lg snavbar navbar-light">
+  <div class="container-fluid">
+    <img class="navlogo" src="img/navlogo.png" alt="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="aboutus.html">About US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="contact us.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="feedback.html">Feedback</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <a class="btn navbtn" href="signup.html">Sign Up</a>
+      </form>
+    </div>
+  </div>
+</nav>
+  
+<!-- nav end -->
+
+<!-- gallery section start -->
+   
+<div class="gallery-title text-center">
+  <h1 style="color: lightgoldenrodyellow;">WALIMA</h1>
+  <a class="btn tbtn" href="venue.html">VENUES</a>
+  <a class="btn tbtn" href="nikah.html">NIKAH</a>
+  <a class="btn tbtn" href="enagement.html">ENGAGEMENT</a>
+  <a class="btn tbtn" href="mehndi.html">MEHNDI</a>
+  <a class="btn tbtn" href="walima.html">WALIMA</a>
+  <a class="btn tbtn" href="catering.html">CATERING</a>
+</div>
+
+<div class="container">
+  <div class="row">
+
+      <div class="col-lg-4 col-md-6 gallery-item">
+          <img style="border: 2px solid black;"src="img/walima1.webp" alt="Animals" class="img-fluid">
+      </div>
+
+      <div class="col-lg-4 col-md-6 gallery-item">
+          <img style="border: 2px solid black;"src="img/walima2.jpg" alt="Architecture" class="img-fluid">
+      </div>
+
+      <div class="col-lg-4 col-md-6 gallery-item">
+          <img style="border: 2px solid black;"src="img/walima3.jpg" alt="Travel" class="img-fluid">
+      </div>
+
+      <div class="col-lg-4 col-md-6 gallery-item">
+          <img style="border: 2px solid black;"src="img/walima4.jpg" alt="Beach" class="img-fluid">
+      </div>
+
+      <div class="col-lg-4 col-md-6 gallery-item">
+          <img style="border: 2px solid black;"src="img/walima5.jpg" alt="Mountains" class="img-fluid">
+      </div>
+
+      <div class="col-lg-4 col-md-6 gallery-item">
+          <img style="border: 2px solid black;"src="img/walima6.jpg" alt="Nature" class="img-fluid">
+      </div>
+
+      <div class="col-lg-4 col-md-6 gallery-item">
+        <img style="border: 2px solid black;"src="img/walima7.jpg" alt="Animals" class="img-fluid">
+      </div>
+
+      <div class="col-lg-4 col-md-6 gallery-item">
+          <img style="border: 2px solid black;"src="img/walima8.jpg" alt="Architecture" class="img-fluid">
+      </div>
+
+      <div class="col-lg-4 col-md-6 gallery-item">
+          <img style="border: 2px solid black;"src="img/walima9.jpg" alt="Travel" class="img-fluid">
+      </div>
+
+  </div>
+</div>
+
+<!-- gallery section end-->
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

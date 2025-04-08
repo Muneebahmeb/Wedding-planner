@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <link rel="shortcut icon" href="img/navlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<style>
+
+.navlogo{
+  height: 70px;
+  width: 100px;
+  padding-left: 10px;
+}
+.snavbar{
+  height: 70px;
+  background-color: #5389F5;
+}
+.navbtn{
+  background-color: lightgray;
+}
+.navbtn:hover{
+  outline: antiquewhite 2px solid;
+  color: rgb(118, 118, 86);
+  background-color: rgb(255, 224, 229);
+}
+:root {
+	--yellow: #FFBD13;
+	--blue: #4383FF;
+	--blue-d-1: #3278FF;
+	--light: #F5F5F5;
+	--grey: #AAA;
+	--white: #FFF;
+	--shadow: 8px 8px 30px rgba(0,0,0,.05);
+}
+
+.wrapper {
+	background: var(--white);
+	padding: 2rem;
+	max-width: 576px;
+	width: 100%;
+	border-radius: .75rem;
+	box-shadow: var(--shadow);
+	text-align: center;
+}
+.wrapper h3 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+.rating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: .5rem;
+	font-size: 2rem;
+	color: var(--yellow);
+	margin-bottom: 2rem;
+}
+.rating .star {
+	cursor: pointer;
+}
+.rating .star.active {
+	opacity: 0;
+	animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+.rating .star:hover {
+	transform: scale(1.1);
+}
+textarea {
+	width: 100%;
+	background: var(--light);
+	padding: 1rem;
+	border-radius: .5rem;
+	border: none;
+	outline: none;
+	resize: none;
+	margin-bottom: .5rem;
+}
+.feedaccord{
+  background-color:lightpink;
+}
+/* .feedbtn{
+  background-color: rgb(255, 224, 229);
+}
+.feedbtn:hover{
+  background-color: rgb(255, 234, 206);
+} */
+
+</style>
+
+<body style="background-color: lightgoldenrodyellow;">
+
+<!-- nav start -->
+
+<nav class="navbar navbar-expand-lg snavbar navbar-light">
+        <div class="container-fluid">
+          <img class="navlogo" src="img/navlogo.png" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="aboutus.html">About US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="contact us.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="feedback.html">Feedback</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <a class="btn navbtn" href="signup.html">Sign Up</a>
+            </form>
+          </div>
+        </div>
+</nav>
+
+<!-- navv end -->
+
+<!-- feedback start -->
+
+<div class="container">
+  <div class="row">
+    <div class="col m-5">
+
+  <div style="margin-left: 25%;" class="wrapper feedaccord">
+		<h3>Give your feedback freely. ...</h3>
+		<form action="#">
+			<div class="rating">
+				<input type="number" name="rating" hidden>
+				<i class='bx bx-star star' style="--i: 0;"></i>
+				<i class='bx bx-star star' style="--i: 1;"></i>
+				<i class='bx bx-star star' style="--i: 2;"></i>
+				<i class='bx bx-star star' style="--i: 3;"></i>
+				<i class='bx bx-star star' style="--i: 4;"></i>
+			</div>
+			<textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..." required></textarea>
+			<div class="btn-group">
+				<button type="submit" class="btn navbtn">Submit</button>
+			</div>
+		</form>
+	</div>
+
+    </div>
+
+    <div class="row">
+    <div class="col m-5">
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed feedaccord" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              What is the role of the wedding planner?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">advise on wedding customs and etiquette. prepare proposals and quotations for the work. agree prices with suppliers like florists, photographers, caterers and venues. make sure costs stay within budget.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed feedaccord" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              What is the function of planner?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">The Role: The aim of the Planner is to assist in the co-ordination of live projects by working with the other members of the project teams to develop, monitor and maintain contracts and programmes.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed feedaccord" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              What is the purpose of the planners?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Why Use a Planner? There are many benefits to using a planner. For one, it can help you stay organized by keeping important information and checklists in one place.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed feedaccord" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Why book a wedding planner?
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Planners take on the role of consultant and guide, providing essential information that helps clients confidently choose their preferred vendors while managing their budgets effectively.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed feedaccord" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+              What is a good wedding timeline?
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">9:00 AM – Hair and Makeup. ... <br>
+              12:00 PM – Getting Dressed. ... <br>
+              1:00 PM – Groomsmen Get Ready. ... <br>
+              2:30 PM – 3:00 PM: Guests Arrive. ... <br>
+              3:00 PM – 3:30 PM: Ceremony. ... <br>
+              4:00 PM – 5:00 PM: Reception.</div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- feedback end -->
+
+<script>
+
+  const allStar = document.querySelectorAll('.rating .star')
+  const ratingValue = document.querySelector('.rating input')
+  
+  allStar.forEach((item, idx)=> {
+    item.addEventListener('click', function () {
+      let click = 0
+      ratingValue.value = idx + 1
+  
+      allStar.forEach(i=> {
+        i.classList.replace('bxs-star', 'bx-star')
+        i.classList.remove('active')
+      })
+      for(let i=0; i<allStar.length; i++) {
+        if(i <= idx) {
+          allStar[i].classList.replace('bx-star', 'bxs-star')
+          allStar[i].classList.add('active')
+        } else {
+          allStar[i].style.setProperty('--i', click)
+          click++
+        }
+      }
+    })
+  })
+  
+      </script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
